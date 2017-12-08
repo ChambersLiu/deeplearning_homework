@@ -10,6 +10,7 @@ import numpy as np
 def softmax(x):
     x_exp = np.exp(x)
     x_sum = np.sum(x_exp, axis=1, keepdims=True)
+    print("x_sum.shape:", x_sum.shape)
     x_softmax = x_exp / x_sum
     return x_softmax
 
