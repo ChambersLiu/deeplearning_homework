@@ -14,4 +14,7 @@ def softmax(x):
     return x_softmax
 
 if __name__ == '__main__':
-    x = np.random.random(size=(3, 4, 5))
+    x = np.array([
+        [9, 2, 5, 6, 7],
+        [7, 5, 4, 8, 10]])
+    print(softmax(x))
